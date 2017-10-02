@@ -1,0 +1,12 @@
+/* CSS Document */
+#header{background-color:#000000; color:#CCCCCC; font:Algerian, sans-serif; font-stretch:semi-expanded; font-size:24px ; font-weight:bold; text-align:left; padding-left:1.5cm;}
+#menu{ background-color:#990000; float:left; color:#CCCCCC;}
+#section{ background-image:url(kanyasulkam_stage_drama_photos_7934390.jpg); color:#FFFFFF}
+ul{list-style-type: none; padding: 0; margin: 0; }
+ul li{float:none; width: 200px; border-right: solid 1px #fff;position:relative;}
+li a,li li a{display: block;   text-align: center; font-size: 17px; color:#FFFFFF; text-decoration: none; line-height: 40p;      vertical-align: middle;}
+li a:hover, li li a:hover{background-color:#CC6666;}
+li li a{  height: 100%;}
+li ul{ position:relative; top: 100%; margin: 0;  padding: 0;display: none;background-color: #666;z-index: 1000; width: 100%;} 
+li li {  float:right; border-right: solid 1px #fff; }
+li:hover ul{ display: block;}

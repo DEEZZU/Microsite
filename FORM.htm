@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Form</title>
+<script type="text/javascript">
+function validate()
+{
+	var uid=document.getElementById('uid');
+	var name=document.getElementById('name');
+	var pass=document.getElementById('pass');
+	var cpass=document.getElementById('cpass');
+	var utype=document.getElementById('utype');
+	var mno=document.getElementById('mno');
+	var state=document.getElementById('state');
+	var city=document.getElementById('city');
+	var pcode=document.getElementById('pcode');
+	var email=document.getElementById('email');
+	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+	if(uid.value=="")
+	{
+		alert("Please Enter value for focused field");
+		uid.focus();
+		return false;	
+	}
+	else if(name.value=="")
+	{
+		alert("Please Enter value for focused field");
+		name.focus();
+		return false;	
+	}
+	else if(pass.value=="")
+	{
+		alert("Please Enter value for focused field");
+		pass.focus();
+		return false;	
+	}
+	else if(pass.value.length<7)
+	{
+		alert("Password must be of minimum 7 characters");
+		pass.focus();
+		return false;
+		
+	}
+	else if(cpass.value=="")
+	{
+		alert("Please Enter value for focused field");
+		cpass.focus();
+		return false;	
+	}
+	else if(pass.value!=cpass.value)
+	{
+		alert("Password and Confirm password do not match!");
+		pass.focus();
+		return false;
+	}
+	else if(!filter.test(email.value))
+	{
+		//var email = document.getElementById('txtEmail');
+    
+    
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;	
+	}
+	else if(utype.value=="")
+	{
+		alert("Please Enter value for focused field");
+		utype.focus();
+		return false;	
+	}
+	else if(mno.value=="")
+	{
+		alert("Please Enter value for focused field");
+		mno.focus();
+		return false;	
+	}
+	
+	else if(isNaN(mno.value))
+	{
+		alert("Please Enter numeric value for focused field");
+		mno.focus();
+		return false;	
+	}
+	else if(state.value=="")
+	{
+		alert("Please Enter value for focused field");
+		state.focus();
+		return false;	
+	}
+	else if(city.value=="")
+	{
+		alert("Please Enter value for focused field");
+		city.focus();
+		return false;	
+	}
+	else if(pcode.value=="")
+	{
+		alert("Please Enter value for focused field");
+		pcode.focus();
+		return false;	
+	}
+	else
+	{
+		return true;
+	}
+}
+</script>
+</head>
+
+<body>
+<form action="form.php" method="post" onsubmit=" return validate()">
+<div align="center">New User Registration
+            <br>
+            <br>
+            
+            <center><table width="100%">
+  <tr>
+    <td width="20%" >User Id</td>
+    <td width="80%" ><input type="text" name="uid" id="uid" /></td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td><input type="text" name="name" id="name" /></td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td><input type="password" name="pass" id="pass"/></td>
+  </tr>
+  <tr>
+    <td>Confirm Password</td>
+    <td><input type="password" name="cpass" id="cpass"/></td>
+  </tr>
+  <tr>
+    <td>Email id:</td>
+    <td><input type="text" name="email" id="email"/></td>
+  </tr>
+  
+   <tr>
+    <td>UserType</td>
+    <td><select name="utype" id="utype">
+    
+      <option value="Buyer">Buyer</option>
+      <option value="Agent">Agent</option>
+      <option value="Builder">Builder</option>
+      <option value="PropertyOwner">Property Owner</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td>MobileNo</td>
+    <td><input type="text" name="mno" id="mno"/></td>
+  </tr>
+  <tr>
+    <td>State</td>
+    <td><input type="text" name="state" id="state"/></td>
+  </tr>
+  <tr>
+    <td>City</td>
+    <td><input type="text" name="city" id="city"></td>
+  </tr>
+  <tr>
+    <td>Pin Code</td>
+    <td><input type="text" name="pcode" id="pcode" /></td>
+  </tr>
+   <tr>
+    <td align="right"><input type="submit" value="Submit" name="submit"/></td>
+    <td><input type="reset" value="reset" /></td>
+  </tr>
+</table></center>
+
+            </div>
+</form>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* CSS Document */
+body{ background-image:url(STAGE.jpg); background-position:center ; background-repeat:no-repeat; background-color:#000000; }
+span{font-size:36px; font-weight:bold; float:left; color:#CCCCCC;}
+hr{ margin-left:0 ; color:#666666 ; width:60% ; size:2 ;}
+p font{ color:#CCCCCC ; font-family:Times New Roman, Times, serif ; size:2;}
+font ol{ color:#FFCC99; font-family:Times New Roman, Times, serif; size:4; padding-left:5cm}
+ol li a{ border-bottom:#999999 ; color:#FF3333; text-decoration:none;}
+ol li a:hover{ color:#FF9933; text-decoration:underline;}
+ 
