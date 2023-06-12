@@ -22,34 +22,34 @@ function validate()
 	{
 		alert("Please Enter value for focused field");
 		uid.focus();
-		return false;	
+		return false;
 	}
 	else if(name.value=="")
 	{
 		alert("Please Enter value for focused field");
 		name.focus();
-		return false;	
+		return false;
 	}
 	else if(pass.value=="")
 	{
 		alert("Please Enter value for focused field");
 		pass.focus();
-		return false;	
+		return false;
 	}
 	else if(pass.value.length<7)
 	{
 		alert("Password must be of minimum 7 characters");
 		pass.focus();
 		return false;
-		
+
 	}
 	else if(cpass.value=="")
 	{
 		alert("Please Enter value for focused field");
 		cpass.focus();
-		return false;	
+		return false;
 	}
-	else if(pass.value!=cpass.value)
+	else if(pass.value!==cpass.value)
 	{
 		alert("Password and Confirm password do not match!");
 		pass.focus();
@@ -58,48 +58,48 @@ function validate()
 	else if(!filter.test(email.value))
 	{
 		//var email = document.getElementById('txtEmail');
-    
-    
+
+
     alert('Please provide a valid email address');
     email.focus;
-    return false;	
+    return false;
 	}
-	else if(utype.value=="")
+	else if(utype.value==="")
 	{
 		alert("Please Enter value for focused field");
 		utype.focus();
-		return false;	
+		return false;
 	}
 	else if(mno.value=="")
 	{
 		alert("Please Enter value for focused field");
 		mno.focus();
-		return false;	
+		return false;
 	}
-	
+
 	else if(isNaN(mno.value))
 	{
 		alert("Please Enter numeric value for focused field");
 		mno.focus();
-		return false;	
+		return false;
 	}
 	else if(state.value=="")
 	{
 		alert("Please Enter value for focused field");
 		state.focus();
-		return false;	
+		return false;
 	}
 	else if(city.value=="")
 	{
 		alert("Please Enter value for focused field");
 		city.focus();
-		return false;	
+		return false;
 	}
 	else if(pcode.value=="")
 	{
 		alert("Please Enter value for focused field");
 		pcode.focus();
-		return false;	
+		return false;
 	}
 	else
 	{
@@ -114,7 +114,7 @@ function validate()
 <div align="center">New User Registration
             <br>
             <br>
-            
+
             <center><table width="100%">
   <tr>
     <td width="20%" >User Id</td>
@@ -136,11 +136,11 @@ function validate()
     <td>Email id:</td>
     <td><input type="text" name="email" id="email"/></td>
   </tr>
-  
+
    <tr>
     <td>UserType</td>
     <td><select name="utype" id="utype">
-    
+
       <option value="Buyer">Buyer</option>
       <option value="Agent">Agent</option>
       <option value="Builder">Builder</option>
