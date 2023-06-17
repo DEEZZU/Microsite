@@ -68,3 +68,8 @@ li a:hover {
     color: whitesmoke;
     margin: unset;
 }
+
+#contact-section img {
+    height: 120px;
+    width: 150px
+}
