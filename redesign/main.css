@@ -44,13 +44,14 @@ li a:hover {
 
 #about-section {
     background-color: black;
-    width: 100%;
+    width: -webkit-fill-available;
     height: 100%;
+    padding: 16px 16px 0 16px ;
 }
 
 #about-section p {
     font-size: 20px;
-    padding: 16px 16px 0 16px ;
+    padding: 16px 0 ;
     color: whitesmoke;
     margin: unset;
 }
@@ -67,4 +68,15 @@ li a:hover {
     padding: 16px 16px 0 16px ;
     color: whitesmoke;
     margin: unset;
+}
+
+#contact-section img {
+    height: 120px;
+    width: 150px
+}
+
+.contact-image {
+    padding: 16px 16px 8px;
+    margin: auto;
+    width: -webkit-fill-available !important;
 }

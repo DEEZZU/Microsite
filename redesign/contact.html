@@ -6,7 +6,7 @@
     <title>Online Training</title>
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
-<body>
+<body style="margin:inherit">
 <div id="root">
     <div id="header">
         Drama
@@ -40,19 +40,22 @@
         </ul>
     </div>
     <div id="contact-section">
-        <p>Contact Us at:</p>
-        <div>
-            <div>
-                <p>EMAIL:</p>
-                <p style="padding-left: 50px;">drama_train@gmail.com</p>
+        <p style="padding: 32px;">Contact Us at:</p>
+        <div style="display: flex; justify-content: space-around; padding: 150px 50px; background-color: grey; flex-direction: row">
+            <div style="border: 2px solid black; border-radius: 10px; width: 210px" onMouseOver="this.style.backgroundColor='black'" onMouseOut="this.style.backgroundColor='transparent'">
+                <img src="./resources/email.webp" class="contact-image"/>
+                <p style="text-align: center; padding: 8px 16px; font-size: 1.5rem; font-weight: 600">EMAIL</p>
+                <p style="text-align: center; padding: 0 16px 16px; font-size: 1rem">drama_train@gmail.com</p>
             </div>
-            <div>
-                <p>PHONE NO:</p>
-                <p style="padding-left: 50px;">28733643, 354555654, 2345234</p>
+            <div style="border: 2px solid black; border-radius: 10px; width: 210px" onMouseOver="this.style.backgroundColor='black'" onMouseOut="this.style.backgroundColor='transparent'">
+                <img src="./resources/phone.png" class="contact-image"/>
+                <p style="text-align: center; padding: 8px 16px; font-size: 1.5rem; font-weight: 600">PHONE NO</p>
+                <p style="text-align: center; padding: 0 16px 16px; font-size: 1rem">28733643, 354555654</p>
             </div>
-            <div>
-                <p>FAX NO:</p>
-                <p style="padding-left: 50px;">3234839</p>
+            <div style="border: 2px solid black; border-radius: 10px; width: 210px" onMouseOver="this.style.backgroundColor='black'" onMouseOut="this.style.backgroundColor='transparent'">
+                <img src="./resources/fax.jpeg" class="contact-image"/>
+                <p style="text-align: center; padding: 8px 16px; font-size: 1.5rem; font-weight: 600">FAX NO</p>
+                <p style="text-align: center; padding: 0 16px 16px; font-size: 1rem">3234839</p>
             </div>
         </div>
     </div>
